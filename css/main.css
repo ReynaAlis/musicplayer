@@ -1,0 +1,418 @@
+body {
+    min-width: 1440px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* font-family: 'Inter', sans-serif;
+font-family: 'Istok Web', sans-serif;
+font-family: 'Karla', sans-serif;
+font-family: 'Kenia', cursive;
+font-family: 'Libre Barcode 128 Text', cursive;
+ */
+
+.header {
+    background: url(https://s3-alpha-sig.figma.com/img/e660/a5d6/4f03cb261de0cb6638e3199b86ee87ed?Expires=1685923200&Signature=YDbthby~WuqeBCG9GIgWsWG7DDt0hfjuMG7qR3bAzhuYKgQf6Njk4y~XrXU~qcA3luScWBV-T7AslHcTGFHZ3l~XP9k~BeoN-iFICTZ090CV26ROgq-Z6wVZ~SRMRXjWedJX2zEX1ZIbnVURj5kc02t0EXVS~LmqdMJ1jv7NrLnvJpcSkHcnc6ooDxp3Hv-7jhoVB~NaFivP-gahwE7SkJyxzei0pR4RQymDhaCzmGuaINV3qGI0pyNAMyRbDfGIO9p8XWZUsLEa60uuVPk5M0gWBGWY-chxFzFOAJxTXD4pqT8O5BJplNLF8kHPFCT~ZaBO1YrtneZzuuwbYargOg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4) repeat;
+    position: relative;
+    height: 1024px;
+}
+
+.header-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 122px;
+}
+
+.header-logo {
+    margin-top: 47px;
+    margin-right: 190px;
+}
+
+.header-list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 100px;
+    margin-top: 74px;
+    margin-bottom: 27px;
+    list-style-type: none;
+}
+
+.header-list-link {
+    text-decoration: none;
+    font-family: 'Istok Web', sans-serif;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: left;
+    cursor: pointer;
+}
+
+.header-list-item a {
+    position: relative;
+}
+
+.header-list-item a:hover {
+    color: #D53005;
+}
+
+.header-list-item a:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    width: 0;
+    /*задаём длинну линии до наведения курсора*/
+    height: 2px;
+    /*задаём ширину линии*/
+    background-color: #D53005;
+    /*задаём цвет линии*/
+    content: "";
+    transition: width 0.3s ease-out;
+    /*задаём время анимации*/
+}
+
+.header-list-item a:hover:after,
+.header-list-item a:focus:after {
+    width: 100%;
+    /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+.header-content {
+    width: 412px;
+    height: 264px;
+    text-align: left;
+    margin: 164px 338px 175px 115px;
+}
+
+.header-content-title {
+    font-family: 'Kenia', cursive;
+    color: #FFFFFF;
+    font-size: 150px;
+    font-weight: 400;
+    line-height: 150px;
+    text-transform: capitalize;
+}
+
+.header-content-description {
+    width: 290px;
+    height: 63px;
+    font-family: 'Istok Web', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+.header-content-img-phone {
+    position: absolute;
+    top: 127px;
+    right: 75px;
+    z-index: 2;
+}
+
+.header-content-img-kabel {
+    position: absolute;
+    top: 862px;
+    right: 177px;
+    z-index: 1;
+}
+
+.main-music {
+    height: 1024px;
+    background-color: #D53005;
+    position: relative;
+}
+
+.main-music-title {
+    margin: 0;
+    padding: 83px 1234px 267px 122px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+.main-music-btn {
+    margin-left: 122px;
+}
+
+.main-music-btn-1, .main-music-btn-2 {
+    width: 382px;
+    height: 83px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    color: #FFFFFF;
+    background: radial-gradient(#B13E18 0%, #F3501A 100%);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: -4px -4px 30px rgba(255, 255, 255, 0.1),
+        4px 4px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.main-music-btn button:active {
+    color: #000000;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.main-music-btn-1 {
+    margin-bottom: 88px;
+}
+
+.main-music-btn-2 {
+    display: block;
+    margin-bottom: 385px;
+}
+
+.main-music-img {
+    position: absolute;
+    top: 179px;
+    right: 0;
+}
+
+.main-about {
+    height: 1024px;
+    background: linear-gradient(180deg, #D53005 0%, #000000 6.04%);
+    color: #FFFFFF;
+    font-family: 'Karla', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+.main-about-title {
+    margin: 0;
+    padding: 83px 72px 358px 122px;
+}
+
+.main-about-article {
+    width: 969px;
+    height: 72px;
+    margin: 0 auto;
+    margin-bottom: 476px;
+}
+
+.main-store {
+    position: relative;
+    background-color: #D53005;
+    height: 1024px;
+    font-weight: 400;
+}
+
+.main-store-title {
+    margin: 0;
+    padding: 83px 1245px 51px 122px;
+    font-family: 'Karla', sans-serif;
+    font-size: 30px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+.main-store-btn {
+    margin-top: 100px;
+    margin-left: 110px;
+}
+
+.main-store-btn-1, .main-store-btn-2 {
+    width: 240px;
+    height: 60px;
+    border-radius: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    box-shadow: -4px -4px 4px rgba(255, 255, 255, 0.1),
+        4px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.main-store-btn-1 {
+    color: #FFFFFF;
+    background: rgba(2, 2, 2, 0.9);
+    border: none;
+    margin-bottom: 53px;
+}
+
+.main-store-btn-2 {
+    display: block;
+    color: #000000;
+    background: #E3E3E3;
+    border: rgba(0, 0, 0, 0.7);
+    margin-bottom: 135px;
+}
+
+.main-store-btn button:active {
+    color: #000000;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+
+.main-store-subtitle {
+    width: 419px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 21px;
+    padding-top: 0;
+    padding-left: 25px;
+    color: #FFFFFF;
+    margin-bottom: 17px;
+}
+
+.main-store-description {
+    width: 431px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    padding-left: 19px;
+    color: #FFFFFF;
+}
+
+.main-store-description a {
+    display: block;
+    color: #040404CC;
+}
+
+.main-store-description a:hover {
+    color: #FFFFFF;
+}
+
+.main-store-img {
+    display: block;
+    position: absolute;
+    top: 169px;
+    right: 0;
+}
+
+.main-store-img img {
+    width: 1168px;
+    height: 685px;
+}
+
+.footer {
+    background: linear-gradient(#D53005 0%, #000000 4.01%);
+    height: 536px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 76px;
+}
+
+.footer-link-list {
+    margin-top: 120px;
+    margin-right: 147px;
+}
+
+.footer-link-list:last-child {
+    margin-right: 62px;
+}
+
+.footer-link-item {
+    list-style-type: none;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+}
+
+.footer-link-item a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.link-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.footer-link-item a {
+    position: relative;
+}
+
+.footer-link-item a:hover {
+    color: #D53005;
+}
+
+.footer-link-item a:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #D53005;
+    content: "";
+    transition: width 0.3s ease-out;
+}
+
+.footer-link-item a:hover:after,
+.footer-link-item a:focus:after {
+    width: 100%;
+}
+
+.footer-bottom {
+    color: #FFFFFF;
+    margin-left: 110px;
+}
+
+.footer-logo-title {
+    font-family: 'Kenia', cursive;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 50px;
+    width: 138px;
+    height: 100px;
+    margin-bottom: 0;
+}
+
+.footer-links-bottom {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.footer-links-bottom-text, .footer-links-item {
+    margin-right: 99px;
+}
+
+.footer-links-item {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.footer-links-item:last-child {
+    margin-right: 121px;
+}
+
+.footer-links-bottom a {
+    position: relative;
+}
+
+.footer-links-bottom a:hover {
+    color: #D53005;
+}
+
+.footer-links-bottom a:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #D53005;
+    content: "";
+    transition: width 0.3s ease-out;
+}
+
+.footer-links-bottom a:hover:after,
+.footer-links-bottom a:focus:after {
+    width: 100%;
+}
